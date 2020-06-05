@@ -11,6 +11,7 @@ const mountDB = (app)=>{
         .then(() => {
             app.context.db = connection
             app.context.models = models
+            console.log(`connect mongoDB successfully!`)
         })
 }
 
